@@ -94,7 +94,7 @@ def visualize(im, bbox_cords):
     mask[ymin:ymax,xmin:xmax] = 1
     new_im = new_im*mask
     new_im = new_im.astype(np.uint8)
-    new_im = cv2.cvtColor(new_im, cv2.cv.CV_BGR2RGB)
+    new_im = cv2.cvtColor(new_im, cv2.COLOR_BGR2RGB)
     plt.imshow(new_im)
     
 def calculate_area(c):
