@@ -161,7 +161,7 @@ def plot_image(im):
 
 def plot_image_cv2(im):
     im = deprocess_image(im)
-    im = cv2.cvtColor(im, cv2.cv.CV_BGR2RGB)
+    im = cv2.cvtColor(im, cv2.COLOR_BGR2RGB)
     plt.figure()
     plt.imshow(im)
     #cv.imshow("Image",im)
